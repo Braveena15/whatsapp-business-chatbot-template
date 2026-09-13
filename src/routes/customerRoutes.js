@@ -1,0 +1,1 @@
+const router = require('express').Router(); const controller = require('../controllers/customerController'); router.get('/customers', controller.list); router.get('/customers/:customerId', controller.get); router.delete('/demo-data', controller.reset); module.exports = router;
